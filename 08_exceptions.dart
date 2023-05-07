@@ -5,4 +5,8 @@ class FooException implements Exception {
   String toString() => msg ?? 'FooException';
 }
 
-void main() {}
+void main() {
+
+
+  
+}

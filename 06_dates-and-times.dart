@@ -12,6 +12,7 @@ void main() {
 
   y2k = DateTime.parse('2000-01-01T00:00:00Z');
   var sameTimeLastYear = now.copyWith(year: now.year - 1);
+  print(sameTimeLastYear);
   /*Example:
      final now = DateTime.now();
      final sameTimeOnMoonLandingDay =

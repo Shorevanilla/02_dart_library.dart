@@ -3,7 +3,7 @@ void main() {
 //lists 可以通过字面量来创建和初始化。另外，也可以使用 List 的构造函数。
 // List 类还定义了若干方法，用于向列表添加或删除项目。
 
-  var grains = <String>[];
+ // var grains = <String>[];
   //但有些时候你 需要 指定泛型。比如：Dart 无法从 [] 中推断出任何类型，它可以是任何类型元素的组合。
   //这时推断的类型基本不会是你想要的，所以你需要写下 <String>[] 或者 <Person>[] 这样的类型声明。
 
@@ -52,9 +52,9 @@ void main() {
     'Kauai': ['Hanalei', 'Poipu']
   };
 
-  var searchTerm = Map(); //函数创建map
+ // var searchTerm = Map(); //函数创建map
 
-  var nobleGases = Map<int, String>(); //可以指定map的键值、值的类型
+  //var nobleGases = Map<int, String>(); //可以指定map的键值、值的类型
 
   //
   var novleGases = {54: 'xenon'};
@@ -104,7 +104,7 @@ void main() {
   //使用 Iterable 的 where() 方法可以获取所有匹配条件的元素。
   //使用 Iterable 的 any() 和 every() 方法可以检查部分或者所有元素是否匹配某个条件
   bool isDecaffeinated(String teaname) => teaname == 'chamomile';
-  var decaffeinate = teas.where((tea) => isDecaffeinated(tea));
+ // var decaffeinate = teas.where((tea) => isDecaffeinated(tea));
     //也可以写成 var decaffeinate = teas.where(isDecaffeinated);
   assert(teas.any(isDecaffeinated));
   assert(!teas.every(isDecaffeinated));
