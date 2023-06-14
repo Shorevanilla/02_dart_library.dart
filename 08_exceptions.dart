@@ -5,8 +5,14 @@ class FooException implements Exception {
   String toString() => msg ?? 'FooException';
 }
 
-void main() {
 
+void main() {
+  try {
+    throw FooException('这是一个自定义异常');
+  } catch (e) {
+    print(e.toString());
+  }
+}
 
   
-}
+
